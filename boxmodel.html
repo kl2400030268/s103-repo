@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 5px solid rgb(91, 2, 2);
+            width: 450px;
+            height: 180px;
+            padding: 40px 40px;
+            background-color: rgb(191, 77, 111);
+            color: rgb(239, 227, 212);
+            font-size: 25px;
+            margin: 10px;
+            border-radius: 420px;
+            overflow: hidden;
+            text-align: center;
+            text-rendering: geometricPrecision;
+            text-shadow: 0px 3px 5px rgb(159, 34, 53);
+            box-shadow: 0px 2px 12px rgb(172, 33, 36);
+            text-decoration: underline;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background: radial-gradient(circle, rgb(222, 61, 90), rgb(242, 145, 145));
+            transition: 0.5s;
+        }
+
+        .box:hover {
+            background: radial-gradient(circle, rgb(237, 97, 111), rgb(235, 140, 112), rgb(237, 234, 128));
+            transform: scale(1.05);
+            box-shadow: 0px 4px 20px rgb(116, 18, 39);
+        }
+
+        body {
+            background: radial-gradient(circle, rgb(240, 241, 168), rgb(236, 131, 117), rgb(235, 104, 121));
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Welcome to CSS box model
+    </div>
+    <div class="box">
+        This is another box with the same style
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Effect Demos</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f6f6;
+        padding: 20px;
+    }
+
+    h2 {
+        color: teal;
+    }
+
+    /* Base button style */
+    .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        margin: 10px;
+        border: none;
+        background: teal;
+        color: white;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    /* 1. Hover Color Change */
+    .hover-color:hover {
+        background: coral;
+    }
+
+    /* 2. Scale Up on Hover */
+    .hover-scale:hover {
+        transform: scale(1.1);
+    }
+
+    /* 3. Rotate on Hover */
+    .hover-rotate:hover {
+        transform: rotate(5deg);
+    }
+
+    /* 4. Glow on Hover */
+    .hover-glow:hover {
+        box-shadow: 0 0 15px teal;
+    }
+
+    /* 5. Move Up on Hover */
+    .hover-move:hover {
+        transform: translateY(-5px);
+    }
+
+    /* 6. Pseudo-element arrow */
+    .hover-arrow::after {
+        content: ' ➜';
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .hover-arrow:hover::after {
+        opacity: 1;
+        margin-left: 5px;
+    }
+
+    /* 7. Input Focus Effect */
+    .focus-input {
+        padding: 8px;
+        border: 2px solid gray;
+        border-radius: 4px;
+        transition: border-color 0.3s;
+    }
+    .focus-input:focus {
+        border-color: teal;
+        outline: none;
+    }
+
+    /* 8. Active Button Press Effect */
+    .btn:active {
+        transform: scale(0.95);
+    }
+
+    /* 9. Image Hover Zoom */
+    .hover-img {
+        width: 200px;
+        transition: transform 0.5s;
+        border-radius: 8px;
+    }
+    .hover-img:hover {
+        transform: scale(1.1);
+    }
+</style>
+</head>
+<body>
+
+<h2>Button Hover Effects</h2>
+<button class="btn hover-color">Hover Color</button>
+<button class="btn hover-scale">Scale Up</button>
+<button class="btn hover-rotate">Rotate</button>
+<button class="btn hover-glow">Glow</button>
+<button class="btn hover-move">Move Up</button>
+<button class="btn hover-arrow">With Arrow</button>
+
+<h2>Input Focus Effect</h2>
+<input type="text" class="focus-input" placeholder="Click here">
+
+<h2>Image Hover Effect</h2>
+<img src="https://via.placeholder.com/200" alt="Sample" class="hover-img">
+
+</body>
+</html>

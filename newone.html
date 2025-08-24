@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let x='javasript'+100+200;
+        let y=100+200+"javascript";
+        console.log("value of x:"+x);
+        console.log("value of y:"+y);
+        let name="This is a javascript book. javscript code";
+        console.log("given name:"+name);
+        console.log("char at position:"+name.charAt(5));
+        console.log("char at 6th position:"+name.charAt(6));
+        console.log("char code at 6th position:"+name.charCodeAt(6));
+        console.log("group of chars using slice:"+name.slice(10,20));
+        console.log("group of chars using slice:"+name.slice(-11,-5));
+        console.log("group of chars using substtring:"+name.substring(10,20));
+        console.log("group of chars using sunstring:"+name.substring(10));
+        console.log("name into Upper:"+name.toUpperCase());
+        console.log("name into lower case:"+name.toLowerCase());
+        console.log("replace javascript with python code:"+name.replaceAll("javascript","python code"));
+        console.log("replace javascript with python:"+name.replace(/javascript/g,"python")); //global:g
+        console.log("splitup of given name based on char:"+name.split(" "));
+        /*
+        loops:
+        -> In javascript we have
+        a)for loop
+        b)while
+        c)do-while
+        d)for-of
+        e)for-in
+    */
+    let ar=name.split(" ")
+   consloe.log("Array elements using for-in after getting from split method:");
+   for(let x in ar){
+    console.log(ar[x]);
+   }
+  console.log("Array elemnets using for-of after getting from split method:");
+   for(let x of ar){
+    console.log(x);
+   }
+        
+        
+    </script>
+</body>
+</html>

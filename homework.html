@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Layout 2</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header header header"
+        "box1 box2 box3 sidebar"
+        "main main main sidebar"
+        "footer footer footer footer";
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto 150px 200px auto;
+      gap: 5px;
+      height: 100vh;
+    }
+
+    .header {
+      grid-area: header;
+      background: #f5e6d3;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .box1 {
+      grid-area: box1;
+      background: cyan;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .box2 {
+      grid-area: box2;
+      background: cyan;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .box3 {
+      grid-area: box3;
+      background: cyan;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background: lime;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .main {
+      grid-area: main;
+      background: yellow;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      background: blue;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Sample Layout 2</h2>
+  <div class="container">
+    <div class="header">HEADER</div>
+    <div class="box1">SMALL BOX 1</div>
+    <div class="box2">SMALL BOX 2</div>
+    <div class="box3">SMALL BOX 3</div>
+    <div class="sidebar">SIDE BAR</div>
+    <div class="main">MAIN CONTENT</div>
+    <div class="footer">FOOTER</div>
+  </div>
+</body>
+</html>
